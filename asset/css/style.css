@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgba(255, 0, 0, 0.205);
+
+}
+.navbar-toggler-icon{
+    color: black !important;
+    background-image: url(../img/menu_icon_153999.png);
+}
+.navbar-brand-img{
+    color: black;
+    
+}
+.navbar_main{
+    justify-content: space-around;
+}
+@media screen and (max-width: 575px){
+    .navbar_logo-2{
+        display: block !important;
+    }
+    
+}
+
+#hero-section{
+    background-image: url(../img/hero-background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
