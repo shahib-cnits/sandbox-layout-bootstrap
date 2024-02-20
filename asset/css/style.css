@@ -1,33 +1,84 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.navbar{
-    background-color: rgba(255, 0, 0, 0.205);
-
-}
-.navbar-toggler-icon{
-    color: black !important;
-    background-image: url(../img/menu_icon_153999.png);
-}
-.navbar-brand-img{
-    color: black;
-    
-}
-.navbar_main{
-    justify-content: space-around;
-}
-@media screen and (max-width: 575px){
-    .navbar_logo-2{
-        display: block !important;
-    }
-    
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
 }
 
-#hero-section{
-    background-image: url(../img/hero-background.png);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
+.navbar {
+  background-color: rgba(255, 0, 0, 0.205);
+}
+.navbar-toggler-icon {
+  color: black !important;
+  background-image: url(../img/menu_icon_153999.png);
+}
+.navbar-brand-img {
+  color: black;
+}
+.navbar_main {
+  justify-content: space-around;
+}
+@media screen and (max-width: 575px) {
+  .navbar_logo-2 {
+    display: block !important;
+  }
+}
+
+#hero-section {
+  background-image: url(../img/hero-background.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.hero_section {
+  text-align: center;
+  padding: 160px 200px 200px 200px !important;
+}
+.hero_section h1 {
+  font-size: 60px !important;
+  font-weight: 600;
+  color: white;
+}
+.hero_section .hero_btm {
+  padding: 12px 24px;
+  font-size: 17px !important;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.hero_section p {
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+}
+
+#hero-section svg {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+#hero-section svg path{
+  fill: #fff;
+  
+}
+
+.card {
+  border: 1px solid black;
+  height: 300px;
+}
+
+@media screen and (max-width: 990px) {
+  .hero_section {
+    padding-top: 100px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .hero_section h1 {
+    font-size: 50px !important;
+  }
 }
