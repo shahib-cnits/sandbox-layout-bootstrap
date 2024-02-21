@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: Urbanist;
 }
+body{
+  background-color: #fcfcfc;
+}
 
 .navbar {
   background-color: rgba(255, 0, 0, 0.205);
@@ -31,10 +34,12 @@
   width: 100%;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .hero_section {
   text-align: center;
-  padding: 160px 200px 200px 200px !important;
+  
 }
 .hero_section h1 {
   font-size: 60px !important;
@@ -66,11 +71,46 @@
   fill: #fff;
   
 }
+/* hero section end*/
+
+/*cards section start*/
+
+/* #card-section{
+  position: relative;
+} */
+.all-cards{
+  bottom: 70px;
+  position: relative;
+  
+}
 
 .card {
-  border: 1px solid black;
+  border: 1px solid #fff;
   height: 300px;
+  padding: 30px;
+  
+  /* position: absolute; */
+  /* top: 100px;*/
 }
+.card-img img{
+  width: 45px;
+  
+}
+.card h5{
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 0px;
+}
+.card p{
+  font-size: 17px;
+  font-weight: 500;
+  color: #7d838d;
+}
+.card a{
+  color: #cc84af;
+  font-size: 17px;
+}
+
 
 @media screen and (max-width: 990px) {
   .hero_section {
@@ -82,3 +122,255 @@
     font-size: 50px !important;
   }
 }
+/* cards section end*/
+
+/* why sandbox section start*/
+
+#shy-sandbox-section{
+  padding-top: 100px;
+}
+.why-heading h6{
+  text-align: center;
+
+}
+.why-heading h2{
+  text-align: center;
+}
+.why-card{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 10px ;
+  
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.why-card.active,
+.why-card:hover{
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+
+}
+.why-img img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  background-color: cover;
+  border: none;
+  border-radius: 5px;
+
+}
+.why-collect{
+  padding-top: 100px;
+}
+.why-collect-text{
+  padding-top: 30px;
+}
+.why-collect-text > ul > li{
+  list-style-type: none;
+}
+.why-btn{
+  color: #fff;
+  font-weight: 600;
+  background-color: pink;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/* why choose sandbox section end*/
+
+/* save time and money secion start*/
+#time-money-section{
+  padding-top: 100px;
+}
+.time-money-ratio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  gap: 50px;
+}
+.time-money-img img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.carousel-item img{
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+
+}
+.carousel-item{
+  padding-top: 80px;
+}
+.carousel-main-div{
+  padding: 50px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
+
+}
+.star-icon{
+  text-align: center;
+  color: gold;
+}
+.quotes{
+  text-align: center;
+}
+.quotes-writer{
+  text-align: center;
+}
+.quotes-writer p{
+  margin: 0px;
+}
+.work-position{
+  padding-bottom: 100px;
+}
+.carousel-indicators button{
+  background-color: white;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+/*save time and money sectino end*/
+
+/* make different section end*/
+
+#make-different-section{
+  padding-top: 50px;
+}
+.make-different-big-img img{
+  width: 100%;
+  aspect-ratio: 5/2;
+  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+  
+
+}
+.make-different-small-img{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
+  
+}
+.make-different-small-img img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: none;
+  border-radius: 10px;
+}
+.make-different-small-img-2 img{
+  aspect-ratio: 3/2;
+}
+.make-different-small-img-1 img{
+  aspect-ratio: 4/3;
+}
+.make-different-cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.make-different-card{
+  display: flex;
+  justify-content: space-between;
+  width: 47%;
+  border: none;
+  margin-bottom: 0px;
+  padding: 10px 30px;
+
+}
+.make-different-card-text p{
+  font-size: 15px;
+}
+
+/*make different section end*/
+
+/* join our community section start*/
+#join-community-section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.join-community{
+  background-image: url(../img/hero-background.png);
+  background-size: cover;
+  padding: 50px 50px;
+  padding-bottom: 40px;
+  object-fit: cover;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+.join-community p{
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.join-community h2{
+  padding: 0px 220px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 40px;
+}
+/* .join-community::after{
+  content: "";
+  background-color: rgba(0, 0, 0, .5);
+} */
+
+
+/* footer section start*/
+
+.footer-content img{
+  margin-bottom: 20px;
+}
+
+.footer-content li{
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2;
+}
+.footer-content ul{
+  padding-left:  0px;
+}
+.footer-content h6{
+  font-size: 17px;
+  font-weight: 700;
+}
+.form-control{
+  width: 95%;
+}
+/* .email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email button{
+  padding: 13px;
+} */
+.input-group{
+  border: 1px solid #a07cc4;
+  border-radius: 10px;
+  padding: 0px 0px;
+}
+.input-group input{
+  border: none;
+  border-radius: 10px;
+}
+.input-group span{
+  border: none;
+  border-radius: 8px;
+  background-color: #a07cc4;
+  padding: 10px 10px;
+}
+
+
+
