@@ -12,6 +12,12 @@ body{
 .navbar {
   background-color: rgba(255, 0, 0, 0.205);
 }
+.nav-link{
+  font-weight: 600 !important;
+}
+.nav-link i{
+  padding-top: 5px;
+}
 .navbar-toggler-icon {
   color: black !important;
   background-image: url(../img/menu_icon_153999.png);
@@ -41,8 +47,8 @@ body{
   text-align: center;
   
 }
-.hero_section h1 {
-  font-size: 60px !important;
+.hero_section h1{
+  font-size: 60px;
   font-weight: 600;
   color: white;
 }
@@ -71,6 +77,26 @@ body{
   fill: #fff;
   
 }
+@media screen and (max-width: 570px) {
+  .hero-hero_section h1{
+    font-size: 10px!important;
+  }
+  .hero_section p{
+    font-size: 20px;
+  }
+  
+  
+}
+@media screen and (max-width: 990px) {
+  .hero_section {
+    padding-top: 100px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .hero_section h1 {
+    font-size: 50px !important;
+  }
+}
 /* hero section end*/
 
 /*cards section start*/
@@ -88,6 +114,7 @@ body{
   border: 1px solid #fff;
   height: 300px;
   padding: 30px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .1);
   
   /* position: absolute; */
   /* top: 100px;*/
@@ -107,21 +134,22 @@ body{
   color: #7d838d;
 }
 .card a{
+  text-decoration: none;
   color: #cc84af;
   font-size: 17px;
+
+}
+@media screen and (max-width: 570px) {
+  .all-cards{
+    gap: 30px;
+  }
+  .card{
+    margin-bottom: 30px;
+  }
+  
 }
 
 
-@media screen and (max-width: 990px) {
-  .hero_section {
-    padding-top: 100px !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  .hero_section h1 {
-    font-size: 50px !important;
-  }
-}
 /* cards section end*/
 
 /* why sandbox section start*/
@@ -177,6 +205,18 @@ body{
   border-radius: 10px;
   padding: 10px 20px;
 }
+@media screen and (max-width: 570px) {
+  .why-collect-text ul{
+    padding: 0px;
+  }
+  .why-card{
+    margin-bottom: 30px;
+  }
+
+  
+  
+}
+
 
 /* why choose sandbox section end*/
 
@@ -236,6 +276,26 @@ body{
   border-radius: 50%;
   margin-left: 3px;
 }
+@media screen and (max-width: 570px){
+  .time-money-ratio{
+    flex-direction: column;
+  
+    
+  }
+  .ratio-95{
+    width: 100%;
+    
+  }
+  .ratio-95 h3, p{
+    text-align: center;
+  }
+  .ratio-80{
+    width: 100%;
+  }
+  .ratio-80 h3{
+    text-align: center;
+  }
+}
 /*save time and money sectino end*/
 
 /* make different section end*/
@@ -290,6 +350,26 @@ body{
 .make-different-card-text p{
   font-size: 15px;
 }
+@media  screen and (max-width: 570px) {
+  .make-different-small-img{
+    flex-direction: column;
+    width: 100%;
+  }
+  .make-different-small-img-1{
+    width: 100%;
+  }
+  .make-different-small-img-2{
+    width: 100%;
+  }
+  .make-different-cards{
+    flex-direction: column;
+  }
+  .make-different-card{
+    text-align: center;
+    width: 80%;
+  }
+  
+}
 
 /*make different section end*/
 
@@ -319,6 +399,18 @@ body{
   font-weight: 700;
   color: #fff;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 960px) {
+  .join-community h2{
+    padding: 0px 0px;
+  }
+  
+}
+@media screen and (max-width: 570px) {
+  .join-community h2{
+    
+  }
+  
 }
 /* .join-community::after{
   content: "";
